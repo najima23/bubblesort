@@ -57,6 +57,10 @@ datastructure.h
 /Users/najimajaadari/Desktop/ueb05Naji/src/datastructure.h
 database.h
 /Users/najimajaadari/Desktop/ueb05Naji/src/database.h
+unistd.h
+-
+stdio.h
+-
 
 /Users/najimajaadari/Desktop/ueb05Naji/src/menu.c
 stdio.h

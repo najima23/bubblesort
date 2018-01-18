@@ -1,7 +1,7 @@
 /****************************************************************************************************
 *****************************************************************************************************
 *** MODUL:           menu.c
-*** description:    Zeichnet das Hauptmenu und nimmt die Auswahl der Unterfunktionen entgegen.
+*** description:    print menu & get menu
 *** global FKT:     getMenu
 *** LOKALE FKT:      -/-
 *****************************************************************************************************
@@ -13,12 +13,11 @@
 
 /********************************************************************
  * function:      getMenu
- * description:  Gibt den Titel des Menusund die einzelene
- *                Untermenus aus.
- * Paramater:     Titelname
- *                Text der Untermenus
- *                Anzahl der Menus
- * return:      Zahl der Menuauswahl
+ * description:  print title und submenus
+ * Paramater:     titel
+ *                menuItem
+ *                number auf submenu
+ * return:      int chosen menu
  *******************************************************************/
 int getMenu(char *titel, char **menuItem, int numberOfItems)
 {
@@ -30,17 +29,17 @@ int getMenu(char *titel, char **menuItem, int numberOfItems)
         clearScreen();
 
         printf("%s\n", titel);
-        printLine('=', strlen(titel));                     // Ausgabe Menutitel
+        printLine('=', strlen(titel));                     //  Menutitel
         printf("\n\n");
 
-        for (i = 0; i < numberOfItems; i++)              // Ausgabe Untermenus
+        for (i = 0; i < numberOfItems; i++)              // submenus
             printf("%02d. %s\n", i + 1, *(menuItem + i));
 
-        printf("\nIhre Wahl: ");                           // Auswahl des Untermenus
+        printf("\nIhre Wahl: ");
         scanf("%d", &input);
         clearBuffer();
 
-    } while (input < 1 || input > numberOfItems);         // Solange keine gueltige Eingabe getaetigt
+    } while (input < 1 || input > numberOfItems);
 
     return input;
 }

@@ -128,10 +128,10 @@
 		<Unit filename="/Users/najimajaadari/Desktop/ueb05Naji/src/teams.c">
 			<Option target="ueb05Naji"/>
 		</Unit>
-		<Unit filename="/Users/najimajaadari/Desktop/ueb05Naji/src/teams.xml">
+		<Unit filename="/Users/najimajaadari/Desktop/ueb05Naji/src/tools.c">
 			<Option target="ueb05Naji"/>
 		</Unit>
-		<Unit filename="/Users/najimajaadari/Desktop/ueb05Naji/src/tools.c">
+		<Unit filename="/Users/najimajaadari/Desktop/ueb05Naji/src/xml/teams.xml">
 			<Option target="ueb05Naji"/>
 		</Unit>
 		<Unit filename="/Users/najimajaadari/Desktop/ueb05Naji/CMakeLists.txt">

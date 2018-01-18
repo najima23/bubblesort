@@ -1,7 +1,7 @@
 /****************************************************************************************************
 *****************************************************************************************************
 *** MODUL:           teams.c
-*** description     Stellt die functionen für die Verwaltung der Teams zur Verfügung
+*** description     managing teams
 *** global FKT:     createTeam
 ***                  deleteTeam
 ***                  addPlayer
@@ -16,9 +16,9 @@
 ****************************************************************************************************
 ***************************************************************************************************/
 
-#define PATH1  "src/xml/teams.xml"
-#define PATH2  "src/xml/new_teams.xml"
-#define PATH3  "src/xml/save_teams.xml"
+#define TEAMSPATH  "../src/xml/teams.xml"
+#define NEWTEAMS  "./src/xml/new_teams.xml"
+#define SAVETEAMS  "./src/xml/save_teams.xml"
 
 #include <stdio.h>
 #include <string.h>
@@ -34,7 +34,7 @@ TTeam Teams[MAXTEAMS];
 
 /********************************************************************
  * function:      createPlayer
- * description:  Eingabe eines Spielers
+ * description:  enter player
  * Paramater:     -/-
  * return:      -/-
  *******************************************************************/
@@ -48,14 +48,14 @@ void createPlayer(TPlayer *Player)
 
 /********************************************************************
  * function:      createTeam
- * description:  Erstellt ein Team
+ * description:  create a team
  * Paramater:     -/-
  * return:      -/-
  *******************************************************************/
 void createTeam()
 {
     TTeam *Team = Teams +
-                  TeamCounter;     // TTeam = Datentyp // pointer + i // &pointer[i] // function will die Adresse vom Pointer wissen
+                  TeamCounter;
     char *title = "Erfassung einer neuen Mannschaft";
     clearScreen();
 
@@ -70,17 +70,16 @@ void createTeam()
 
         Team->Size = 0;
 
-        /* Erfassung eines Spielers in einer neuen Manschaft */
         title = "Erfassung der Spieler";
         printf("\n%s\n", title);
         printLine('-', strlen(title));
 
         do
         {
-            createPlayer((Team->Player) + (Team->Size));     // Spieler erstellen (
-            (Team->Size)++;                              // Größe der Manschaft um 1 erhöhen
+            createPlayer((Team->Player) + (Team->Size));
+            (Team->Size)++;
             printf("\nAnzahl der Spieler in der Mannschaft: %i",
-                   (Team->Size)); // Test !! Gibt die Aktuelle Größe der Spieler aus
+                   (Team->Size));
         } while (askYesOrNo("\nMoechten sie einen weiteren Spieler eingeben (j/n)? "));
         TeamCounter++;
     } else
@@ -92,7 +91,7 @@ void createTeam()
 
 /********************************************************************
  * function:      deleteTeam
- * description:  Loescht ein Team
+ * description:  delete a team
  * Paramater:     -/-
  * return:      -/-
  *******************************************************************/
@@ -104,7 +103,7 @@ void deleteTeam()
 
 /********************************************************************
  * function:      addPlayer
- * description:  Hinzufuegen von Spielern
+ * description:  add player
  * Paramater:     -/-
  * return:      -/-
  *******************************************************************/
@@ -116,7 +115,7 @@ void addPlayer()
 
 /********************************************************************
  * function:      deletePlayer
- * description:  Loeschen eines Spielers
+ * description:  delete a player
  * Paramater:     -/-
  * return:      -/-
  *******************************************************************/
@@ -128,7 +127,7 @@ void deletePlayer()
 
 /********************************************************************
  * function:      searchPlayer
- * description:  Suchen eines Spielers
+ * description:  search a player
  * Paramater:     -/-
  * return:      -/-
  *******************************************************************/
@@ -140,7 +139,7 @@ void searchPlayer()
 
 /********************************************************************
  * function:      sortTeams
- * description:  Sortiert die Teams
+ * description:  sort team
  * Paramater:     -/-
  * return:      -/-
  *******************************************************************/
@@ -180,7 +179,7 @@ int sortTeams()
 
 /********************************************************************
  * function:      listOnePlayer
- * description:  Listet einen Spieler auf
+ * description:  list one player
  * Paramater:     -/-
  * return:      -/-
  *******************************************************************/
@@ -197,7 +196,7 @@ void listOnePlayer(TPlayer *Player, int Size)
 
 /********************************************************************
  * function:      listOneTeam
- * description:  Listet ein Team auf
+ * description:  list one team
  * Paramater:     -/-
  * return:      -/-
  *******************************************************************/
@@ -221,7 +220,7 @@ void listOneTeam(TTeam *Team)
 
 /********************************************************************
  * function:      listTeams
- * description:  Listet die Teams auf
+ * description:  List teams
  * Paramater:     -/-
  * return:      -/-
  *******************************************************************/
@@ -250,9 +249,9 @@ void listTeams()
 
 /********************************************************************
  * function:      loadFileMenu
- * description:  Gibt das Load Untermenu aus
+ * description:  print submenu
  * Paramater:     -/-
- * return:      Auswahl des Untermenus
+ * return:      selection(int) submenu
  *******************************************************************/
 int loadFileMenu()
 {
@@ -268,13 +267,13 @@ int loadFileMenu()
         switch (input)
         {
             case 1:
-                load(PATH1);
+                load(TEAMSPATH);
                 break;
             case 2:
-                load(PATH2);
+                load(NEWTEAMS);
                 break;
             case 3:
-                load(PATH3);
+                load(SAVETEAMS);
                 break;
             case 4:
                 return 0;

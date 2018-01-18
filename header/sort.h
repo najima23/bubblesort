@@ -6,5 +6,7 @@ int cmpName(TPlayer *, TPlayer *);
 int cmpBirthday(TPlayer *, TPlayer *);
 int cmpTrikot(TPlayer *, TPlayer *);
 int cmpGoals(TPlayer *, TPlayer *);
+void swap(TPlayer *, TPlayer *);
+
 
 #endif

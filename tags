@@ -66,9 +66,9 @@ Name	header/datastructure.h	/^      char     *Name;$/;"	m	struct:__anon12302cbe0
 Name	header/datastructure.h	/^      char  *Name;$/;"	m	struct:__anon12302cbe0208	typeref:typename:char *
 Number	header/datastructure.h	/^      int   Number;$/;"	m	struct:__anon12302cbe0208	typeref:typename:int
 PATH	src/database.c	/^#define PATH /;"	d	file:
-PATH1	src/teams.c	/^#define PATH1 /;"	d	file:
-PATH2	src/teams.c	/^#define PATH2 /;"	d	file:
-PATH3	src/teams.c	/^#define PATH3 /;"	d	file:
+TEAMSPATH	src/teams.c	/^#define TEAMSPATH /;"	d	file:
+NEWTEAMS	src/teams.c	/^#define NEWTEAMS /;"	d	file:
+SAVETEAMS	src/teams.c	/^#define SAVETEAMS /;"	d	file:
 PLATFORM_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
 PLATFORM_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
 PLATFORM_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID /;"	d	file:
@@ -167,7 +167,7 @@ main	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^i
 main	cmake-build-debug/CMakeFiles/feature_tests.c	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f	typeref:typename:int
 main	cmake-build-debug/CMakeFiles/feature_tests.cxx	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f	typeref:typename:int
 main	src/main.c	/^int main()$/;"	f	typeref:typename:int
-partition	src/sort.c	/^int partition(TPlayer *Array, int ui, int oi, int (*cmp)(TPlayer *, TPlayer *))$/;"	f	typeref:typename:int
+partition	src/sort.c	/^int splitarray(TPlayer *Array, int ui, int oi, int (*cmp)(TPlayer *, TPlayer *))$/;"	f	typeref:typename:int
 preinstall	cmake-build-debug/Makefile	/^preinstall: all$/;"	t
 preinstall/fast	cmake-build-debug/Makefile	/^preinstall\/fast:$/;"	t
 printDate	src/datetime.c	/^void printDate(TDate *Date)$/;"	f	typeref:typename:void
