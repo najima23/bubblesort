@@ -1,0 +1,231 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/157918c6/
+$(VERBOSE).SILENT	cmake-build-debug/Makefile	/^$(VERBOSE).SILENT:$/;"	t
+ARCHITECTURE_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ARCHITECTURE_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID$/;"	d	file:
+Birthday	header/datastructure.h	/^      TDate *Birthday;$/;"	m	struct:__anon12302cbe0208	typeref:typename:TDate *
+CLEAR	src/tools.c	/^#define CLEAR /;"	d	file:
+CMAKE_BINARY_DIR	cmake-build-debug/Makefile	/^CMAKE_BINARY_DIR = \/Users\/najimajaadari\/Desktop\/ueb05Naji\/cmake-build-debug$/;"	m
+CMAKE_COMMAND	cmake-build-debug/Makefile	/^CMAKE_COMMAND = \/Applications\/CLion.app\/Contents\/bin\/cmake\/bin\/cmake$/;"	m
+CMAKE_SOURCE_DIR	cmake-build-debug/Makefile	/^CMAKE_SOURCE_DIR = \/Users\/najimajaadari\/Desktop\/ueb05Naji$/;"	m
+COMPILER_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
+COMPILER_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_ID /;"	d	file:
+COMPILER_VERSION_MAJOR	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MINOR	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_PATCH	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_TWEAK	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+C_DIALECT	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT /;"	d	file:
+C_DIALECT	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT$/;"	d	file:
+C_DIALECT	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^# define C_DIALECT /;"	d	file:
+Coach	header/datastructure.h	/^      char     *Coach;$/;"	m	struct:__anon12302cbe0308	typeref:typename:char *
+DATABASE_H_INCLUDED	header/database.h	/^   #define DATABASE_H_INCLUDED$/;"	d
+DATASTRUCTURE_H_INCLUDED	header/datastructure.h	/^   #define DATASTRUCTURE_H_INCLUDED$/;"	d
+DATETIME_H_INCLUDED	header/datetime.h	/^   #define DATETIME_H_INCLUDED$/;"	d
+DEC	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#define DEC(/;"	d	file:
+DEC	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define DEC(/;"	d	file:
+Day	header/datastructure.h	/^      int Day;$/;"	m	struct:__anon12302cbe0108	typeref:typename:int
+EQUALS	cmake-build-debug/Makefile	/^EQUALS = =$/;"	m
+Goals	header/datastructure.h	/^      int   Goals;$/;"	m	struct:__anon12302cbe0208	typeref:typename:int
+HEX	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
+HEX	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
+ID_VOID_MAIN	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
+MAXPLAYER	header/datastructure.h	/^   #define MAXPLAYER /;"	d
+MAXTEAMS	header/datastructure.h	/^   #define MAXTEAMS /;"	d
+MENU_H	header/menu.h	/^   #define MENU_H /;"	d
+Month	header/datastructure.h	/^      int Month;$/;"	m	struct:__anon12302cbe0108	typeref:typename:int
+Name	header/datastructure.h	/^      char     *Name;$/;"	m	struct:__anon12302cbe0308	typeref:typename:char *
+Name	header/datastructure.h	/^      char  *Name;$/;"	m	struct:__anon12302cbe0208	typeref:typename:char *
+Number	header/datastructure.h	/^      int   Number;$/;"	m	struct:__anon12302cbe0208	typeref:typename:int
+PATH	src/database.c	/^#define PATH /;"	d	file:
+PATH1	src/teams.c	/^#define PATH1 /;"	d	file:
+PATH2	src/teams.c	/^#define PATH2 /;"	d	file:
+PATH3	src/teams.c	/^#define PATH3 /;"	d	file:
+PLATFORM_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID$/;"	d	file:
+Player	header/datastructure.h	/^      TPlayer  Player[MAXPLAYER];$/;"	m	struct:__anon12302cbe0308	typeref:typename:TPlayer[]
+QuickSort	src/sort.c	/^void QuickSort(TPlayer *Array, int Anzahl, int (*cmp)(TPlayer *, TPlayer *))$/;"	f	typeref:typename:void
+RM	cmake-build-debug/Makefile	/^RM = \/Applications\/CLion.app\/Contents\/bin\/cmake\/bin\/cmake -E remove -f$/;"	m
+SHELL	cmake-build-debug/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SIMULATE_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_VERSION_MAJOR	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MINOR	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SORT_H_INCLUDED	header/sort.h	/^   #define SORT_H_INCLUDED$/;"	d
+STRINGIFY	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY_HELPER	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
+STRINGIFY_HELPER	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY_HELPER(/;"	d	file:
+SUFFIXES	cmake-build-debug/Makefile	/^SUFFIXES =$/;"	m
+Size	header/datastructure.h	/^      int      Size;$/;"	m	struct:__anon12302cbe0308	typeref:typename:int
+TDate	header/datastructure.h	/^   } TDate;$/;"	t	typeref:struct:__anon12302cbe0108
+TEAMS_H	header/teams.h	/^   #define TEAMS_H /;"	d
+TOOLS_H	header/tools.h	/^   #define TOOLS_H /;"	d
+TPlayer	header/datastructure.h	/^   } TPlayer;$/;"	t	typeref:struct:__anon12302cbe0208
+TTeam	header/datastructure.h	/^   } TTeam;$/;"	t	typeref:struct:__anon12302cbe0308
+TeamCounter	src/teams.c	/^int TeamCounter = 0;$/;"	v	typeref:typename:int
+Teams	src/teams.c	/^TTeam Teams[MAXTEAMS];$/;"	v	typeref:typename:TTeam[]
+Year	header/datastructure.h	/^      int Year;$/;"	m	struct:__anon12302cbe0108	typeref:typename:int
+__anon12302cbe0108	header/datastructure.h	/^   {$/;"	s
+__anon12302cbe0208	header/datastructure.h	/^   {$/;"	s
+__anon12302cbe0308	header/datastructure.h	/^   {$/;"	s
+addPlayer	src/teams.c	/^void addPlayer()$/;"	f	typeref:typename:void
+all	cmake-build-debug/Makefile	/^all: cmake_check_build_system$/;"	t
+askYesOrNo	src/tools.c	/^int askYesOrNo(char *text)$/;"	f	typeref:typename:int
+clean	cmake-build-debug/Makefile	/^clean:$/;"	t
+clean/fast	cmake-build-debug/Makefile	/^clean\/fast: clean$/;"	t
+clearBuffer	src/tools.c	/^void clearBuffer(void)$/;"	f	typeref:typename:void
+clearScreen	src/tools.c	/^void clearScreen(void)$/;"	f	typeref:typename:void
+clearSpaceOrTab	src/tools.c	/^char *clearSpaceOrTab(char *Prompt)$/;"	f	typeref:typename:char *
+cmake_check_build_system	cmake-build-debug/Makefile	/^cmake_check_build_system:$/;"	t
+cmake_force	cmake-build-debug/Makefile	/^cmake_force:$/;"	t
+cmpBirthday	src/sort.c	/^int cmpBirthday(TPlayer *D1, TPlayer *D2)$/;"	f	typeref:typename:int
+cmpGoals	src/sort.c	/^int cmpGoals(TPlayer *D1, TPlayer *D2)$/;"	f	typeref:typename:int
+cmpName	src/sort.c	/^int cmpName(TPlayer *D1, TPlayer *D2)$/;"	f	typeref:typename:int
+cmpTrikot	src/sort.c	/^int cmpTrikot(TPlayer *D1, TPlayer *D2)$/;"	f	typeref:typename:int
+const	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^# define const$/;"	d	file:
+createPlayer	src/teams.c	/^void createPlayer(TPlayer *Player)$/;"	f	typeref:typename:void
+createTeam	src/teams.c	/^void createTeam()$/;"	f	typeref:typename:void
+default_target	cmake-build-debug/Makefile	/^default_target: all$/;"	t
+deletePlayer	src/teams.c	/^void deletePlayer()$/;"	f	typeref:typename:void
+deleteTeam	src/teams.c	/^void deleteTeam()$/;"	f	typeref:typename:void
+depend	cmake-build-debug/Makefile	/^depend:$/;"	t
+edit_cache	cmake-build-debug/Makefile	/^edit_cache:$/;"	t
+edit_cache/fast	cmake-build-debug/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
+features	cmake-build-debug/CMakeFiles/feature_tests.c	/^  const char features[] = {"\\n"$/;"	v	typeref:typename:const char[]
+features	cmake-build-debug/CMakeFiles/feature_tests.cxx	/^  const char features[] = {"\\n"$/;"	v	typeref:typename:const char[]
+getDate	src/datetime.c	/^void getDate(char *Prompt, TDate **Datum)$/;"	f	typeref:typename:void
+getDateFromString	src/datetime.c	/^short getDateFromString(char *input, TDate *date)$/;"	f	typeref:typename:short
+getMenu	src/menu.c	/^int getMenu(char *titel, char **menuItem, int numberOfItems)$/;"	f	typeref:typename:int
+getNumber	src/tools.c	/^void getNumber(char *Prompt, int *Number, int From, int To)$/;"	f	typeref:typename:void
+getText	src/tools.c	/^short getText(char *Prompt, int MaxLen, int AllowEmpty, char **Text)$/;"	f	typeref:typename:short
+help	cmake-build-debug/Makefile	/^help:$/;"	t
+info_arch	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_arch	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_cray	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_cray	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_language_dialect_default	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_dialect_default =$/;"	v	typeref:typename:const char *
+info_language_dialect_default	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_dialect_default = "INFO" ":" "dialect_default["$/;"	v	typeref:typename:const char *
+info_platform	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_platform	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate_version	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_simulate_version	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+isDateValid	src/datetime.c	/^short isDateValid(TDate date)$/;"	f	typeref:typename:short
+isLeapYear	src/datetime.c	/^short isLeapYear(int year)$/;"	f	typeref:typename:short
+listOnePlayer	src/teams.c	/^void listOnePlayer(TPlayer *Player, int Size)$/;"	f	typeref:typename:void
+listOneTeam	src/teams.c	/^void listOneTeam(TTeam *Team)$/;"	f	typeref:typename:void
+listTeams	src/teams.c	/^void listTeams()$/;"	f	typeref:typename:void
+load	src/database.c	/^int load(char *Datei)$/;"	f	typeref:typename:int
+loadFileMenu	src/teams.c	/^int loadFileMenu()$/;"	f	typeref:typename:int
+loadPlayer	src/database.c	/^void loadPlayer(char *tmp, FILE *fp, TTeam *Team)$/;"	f	typeref:typename:void
+loadTeam	src/database.c	/^void loadTeam(char *tmp, FILE *fp)$/;"	f	typeref:typename:void
+main	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f	typeref:typename:void
+main	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
+main	cmake-build-debug/CMakeFiles/feature_tests.c	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f	typeref:typename:int
+main	cmake-build-debug/CMakeFiles/feature_tests.cxx	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f	typeref:typename:int
+main	src/main.c	/^int main()$/;"	f	typeref:typename:int
+partition	src/sort.c	/^int partition(TPlayer *Array, int ui, int oi, int (*cmp)(TPlayer *, TPlayer *))$/;"	f	typeref:typename:int
+preinstall	cmake-build-debug/Makefile	/^preinstall: all$/;"	t
+preinstall/fast	cmake-build-debug/Makefile	/^preinstall\/fast:$/;"	t
+printDate	src/datetime.c	/^void printDate(TDate *Date)$/;"	f	typeref:typename:void
+printLine	src/tools.c	/^void printLine(char c, int count)$/;"	f	typeref:typename:void
+qnxnto	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+qnxnto	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+qsort	src/sort.c	/^void qsort(TPlayer *Array, int ui, int oi, int (*cmp)(TPlayer *, TPlayer *))$/;"	f	typeref:typename:void
+rebuild_cache	cmake-build-debug/Makefile	/^rebuild_cache:$/;"	t
+rebuild_cache/fast	cmake-build-debug/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
+save	src/database.c	/^int save(TTeam *D)$/;"	f	typeref:typename:int
+savePlayer	src/database.c	/^void savePlayer(TPlayer *P, FILE *wp)$/;"	f	typeref:typename:void
+saveTeam	src/database.c	/^void saveTeam(TTeam *D, FILE *wp)$/;"	f	typeref:typename:void
+searchPlayer	src/teams.c	/^void searchPlayer()$/;"	f	typeref:typename:void
+sortTeams	src/teams.c	/^int sortTeams()$/;"	f	typeref:typename:int
+src/database.c.i	cmake-build-debug/Makefile	/^src\/database.c.i:$/;"	t
+src/database.c.o	cmake-build-debug/Makefile	/^src\/database.c.o:$/;"	t
+src/database.c.s	cmake-build-debug/Makefile	/^src\/database.c.s:$/;"	t
+src/database.i	cmake-build-debug/Makefile	/^src\/database.i: src\/database.c.i$/;"	t
+src/database.o	cmake-build-debug/Makefile	/^src\/database.o: src\/database.c.o$/;"	t
+src/database.s	cmake-build-debug/Makefile	/^src\/database.s: src\/database.c.s$/;"	t
+src/datetime.c.i	cmake-build-debug/Makefile	/^src\/datetime.c.i:$/;"	t
+src/datetime.c.o	cmake-build-debug/Makefile	/^src\/datetime.c.o:$/;"	t
+src/datetime.c.s	cmake-build-debug/Makefile	/^src\/datetime.c.s:$/;"	t
+src/datetime.i	cmake-build-debug/Makefile	/^src\/datetime.i: src\/datetime.c.i$/;"	t
+src/datetime.o	cmake-build-debug/Makefile	/^src\/datetime.o: src\/datetime.c.o$/;"	t
+src/datetime.s	cmake-build-debug/Makefile	/^src\/datetime.s: src\/datetime.c.s$/;"	t
+src/main.c.i	cmake-build-debug/Makefile	/^src\/main.c.i:$/;"	t
+src/main.c.o	cmake-build-debug/Makefile	/^src\/main.c.o:$/;"	t
+src/main.c.s	cmake-build-debug/Makefile	/^src\/main.c.s:$/;"	t
+src/main.i	cmake-build-debug/Makefile	/^src\/main.i: src\/main.c.i$/;"	t
+src/main.o	cmake-build-debug/Makefile	/^src\/main.o: src\/main.c.o$/;"	t
+src/main.s	cmake-build-debug/Makefile	/^src\/main.s: src\/main.c.s$/;"	t
+src/menu.c.i	cmake-build-debug/Makefile	/^src\/menu.c.i:$/;"	t
+src/menu.c.o	cmake-build-debug/Makefile	/^src\/menu.c.o:$/;"	t
+src/menu.c.s	cmake-build-debug/Makefile	/^src\/menu.c.s:$/;"	t
+src/menu.i	cmake-build-debug/Makefile	/^src\/menu.i: src\/menu.c.i$/;"	t
+src/menu.o	cmake-build-debug/Makefile	/^src\/menu.o: src\/menu.c.o$/;"	t
+src/menu.s	cmake-build-debug/Makefile	/^src\/menu.s: src\/menu.c.s$/;"	t
+src/sort.c.i	cmake-build-debug/Makefile	/^src\/sort.c.i:$/;"	t
+src/sort.c.o	cmake-build-debug/Makefile	/^src\/sort.c.o:$/;"	t
+src/sort.c.s	cmake-build-debug/Makefile	/^src\/sort.c.s:$/;"	t
+src/sort.i	cmake-build-debug/Makefile	/^src\/sort.i: src\/sort.c.i$/;"	t
+src/sort.o	cmake-build-debug/Makefile	/^src\/sort.o: src\/sort.c.o$/;"	t
+src/sort.s	cmake-build-debug/Makefile	/^src\/sort.s: src\/sort.c.s$/;"	t
+src/teams.c.i	cmake-build-debug/Makefile	/^src\/teams.c.i:$/;"	t
+src/teams.c.o	cmake-build-debug/Makefile	/^src\/teams.c.o:$/;"	t
+src/teams.c.s	cmake-build-debug/Makefile	/^src\/teams.c.s:$/;"	t
+src/teams.i	cmake-build-debug/Makefile	/^src\/teams.i: src\/teams.c.i$/;"	t
+src/teams.o	cmake-build-debug/Makefile	/^src\/teams.o: src\/teams.c.o$/;"	t
+src/teams.s	cmake-build-debug/Makefile	/^src\/teams.s: src\/teams.c.s$/;"	t
+src/tools.c.i	cmake-build-debug/Makefile	/^src\/tools.c.i:$/;"	t
+src/tools.c.o	cmake-build-debug/Makefile	/^src\/tools.c.o:$/;"	t
+src/tools.c.s	cmake-build-debug/Makefile	/^src\/tools.c.s:$/;"	t
+src/tools.i	cmake-build-debug/Makefile	/^src\/tools.i: src\/tools.c.i$/;"	t
+src/tools.o	cmake-build-debug/Makefile	/^src\/tools.o: src\/tools.c.o$/;"	t
+src/tools.s	cmake-build-debug/Makefile	/^src\/tools.s: src\/tools.c.s$/;"	t
+swap	src/sort.c	/^void swap(TPlayer *D1, TPlayer *D2)$/;"	f	typeref:typename:void
+ueb05Naji	cmake-build-debug/Makefile	/^ueb05Naji: cmake_check_build_system$/;"	t
+ueb05Naji/fast	cmake-build-debug/Makefile	/^ueb05Naji\/fast:$/;"	t
+volatile	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c	/^# define volatile$/;"	d	file:
+waitForEnter	src/tools.c	/^void waitForEnter()$/;"	f	typeref:typename:void

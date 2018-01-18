@@ -16,9 +16,9 @@
 ****************************************************************************************************
 ***************************************************************************************************/
 
-#define PATH1  "IN2/teams.xml"
-#define PATH2  "IN2/little_teams.xml"
-#define PATH3  "IN2/save_teams.xml"
+#define PATH1  "src/xml/teams.xml"
+#define PATH2  "src/xml/new_teams.xml"
+#define PATH3  "src/xml/save_teams.xml"
 
 #include <stdio.h>
 #include <string.h>
@@ -259,7 +259,7 @@ int loadFileMenu()
     int input;
     char *menuTitel = "Datei Laden";
     char *menuItems[] = {"Datei laden (teams.xml)",
-                         "Datei laden (little_teams.xml)",
+                         "Datei laden (new_teams.xml)",
                          "Datei laden (save_teams.xml)",
                          "zurueck zum Hauptmenu"};
     if (TeamCounter < MAXTEAMS)
