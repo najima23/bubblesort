@@ -1,8 +1,8 @@
 /****************************************************************************************************
 *****************************************************************************************************
 *** MODUL:           datetime.c
-*** description:    Stellt functionen fï¿½r die Eingabe von Datum und Uhrzeit zur Verfï¿½gung
-*** global FKT:     getDateFromString
+*** BESCHREIBUNG:    Stellt Funktionen für die Eingabe von Datum und Uhrzeit zur Verfügung
+*** GLOBALE FKT:     getDateFromString
 ***                  getDate
 ***                  printDate
 *** LOKALE FKT:      isLeapYear
@@ -17,141 +17,168 @@
 #include "datetime.h"
 
 /********************************************************************
- * function:     isLeapYear
- * description:  check if the year is a leap-year
- * Paramater:    year to proof
- * return:       boolean if leap-year return 1 else 0
+ * Funktion:      isLeapYear
+ * Beschreibung:  Überprüft, ob es sich um das als Argument übergebene Jahr um
+ *                ein Schaltjahr handel
+ * Paramater:     Das Jahr, das überprüft werden soll
+ * Ergebnis:      1, wenn es sich um ein Schaltjahr handel
+ *                0, wenn nicht
  *******************************************************************/
-short isLeapYear(int year)
+short isLeapYear (int year)
 {
-    if (year % 400 == 0)
-        return 1;
-    else if (year % 100 == 0)
-        return 0;
-    else if (year % 4 == 0)
-        return 1;
-    else
-        return 0;
+   if ( year%400 == 0)              // Wenn sich das Jahr durch 400 oder 4, aber nicht durch 100 teilen laesst: Schaltjahr
+      return 1;
+   else if ( year%100 == 0)
+      return 0;
+   else if ( year%4 == 0 )
+      return 1;
+   else
+      return 0;
 }
 
 /********************************************************************
- * function:      isDateValid
- * description:   check if the date is valid
- * Paramater:     struct date
- * return:        boolean
+ * Funktion:      isDateValid
+ * Beschreibung:  Ueberprueft, ob das als Argument uebergebene Datum
+ *                gueltig ist
+ * Paramater:     Eine Struktur, die das Datum beinhaltet
+ * Ergebnis:      1, wenn das Datum gueltig ist
+ *                0, wenn nicht
  *******************************************************************/
-short isDateValid(TDate date)
+short isDateValid (TDate Date)
 {
-    //check year
-    if ((date.Year > 9999) || (date.Year < 0)) return 0;
+   int daysPerMonth = 0;      // Anzahl der Tage, die ein Monat hat
 
-    //check month
-    if ((date.Month > 12) || (date.Month < 0)) return 0;
+   switch (Date.Month)                             // Feststellen, wie viele Tage der eingegebene Monat hat
+   {                                               // und Feststellen, ob der eingegebene Monat korrekt ist
+      case 1:                                      // Evtl auch mit ENUM?????
+      case 3:
+      case 5:
+      case 7:
+      case 8:
+      case 10:
+      case 12: daysPerMonth = 31; break;
+      case 4:
+      case 6:
+      case 9:
+      case 11: daysPerMonth = 30; break;
+      case 2: daysPerMonth = 28; break;
+      default: return 0;
+   }
+   if ((daysPerMonth == 28) && (isLeapYear(Date.Year)))     // Wenn Schaltjahr, dann Februar 29 Tage
+      daysPerMonth++;
 
-    //check day
-    if ((date.Day > 31) || (date.Day < 0)) return 0;
-
-    if (((date.Month == 4) || (date.Month == 6) || (date.Month == 9) || (date.Month == 11)) &&
-        (date.Day > 30))
-        return 0;
-
-    if (date.Month == 2)
-    {
-        if ((date.Day == 28) && (isLeapYear(date.Year))) return 1;
-        if (date.Day > 28) return 0;
-    }
-    return 1;
+   if (Date.Day >= 1 && Date.Day <= daysPerMonth &&         // Sind Jahr und Tag korrekt?
+       Date.Year >= 1900 && Date.Year <= 2199)
+      return 1;
+   else
+      return 0;
 }
 
 /********************************************************************
- * function:    getDateFromString
- * description: convert string input from user to a valid time and seperate with ":"
- * Paramater:   char input from user(date) , and time
- * return:      boolean
+ * Funktion:      getDateFromString
+ * Beschreibung:  Ein in Stringform eingegebenes Datum wird in Int
+ *                umgewandelt, ueberprueft und wenn korrekt in eine
+ *                Struktur gespeichert.
+ * Paramater:     - Der String, der das Datum enthalten soll
+ *                - Zeiger auf eine Struktur, in die das Datum
+ *                  gespeichert werden soll
+ * Ergebnis:      1, wenn der String ein gueltiges Datum enthielt
+ *                0, wenn nicht
  *******************************************************************/
 short getDateFromString(char *input, TDate *date)
 {
-    date->Day = atoi(input);
+   char  *pDay = input,       // Zeiger fuer Tageszahl
+         *pMonth = NULL,      // Zeiger fuer Monatszahl
+         *pYear = NULL,       // Zeiger fuer Jahreszahl
+         *pSearch = input;    // Suchzeiger
+   TDate toValid;             // Struktur zum Validieren des Datums
 
+   while (*pSearch)                                   // String nach Punkten durchsuchen und Pointer
+   {                                                  // fuer Monat und Jahr hinter die Punkte setzen
+      if ( *pSearch == '.')
+      {
+         if (!pMonth)
+            pMonth = pSearch+1;
+         else
+         {
+            pYear = pSearch+1;
+            break;                                    // Wenn Pointer fuer Jahr gesetzt: Suchschleife verlassen
+         }
+      }
 
-    //get month pointer
-    do
-    {
-        if (*input == '\0') return 0;
-        input++;
-    } while (*input != '.');
-    input++;
-    date->Month = atoi(input);
+      pSearch++;
+   }
 
-    //get year pinter
-    do
-    {
-        if (*input == '\0') return 0;
-        input++;
-    } while (*input != '.');
-    input++;
-    date->Year = atoi(input);
+   if (!pYear)                                        // Wenn die Jahreszeiger nicht gesetzt:
+      return 0;                                       // Funktion beenden, Eingabe des Datum ist ungueltig
 
-    if (isDateValid(*date))
-    {
-        return 1;
-    } else
-    {
-        return 0;
-    }                                      // Ansonsten die function mit 0 beenden
+   toValid.Day = atoi(pDay);                          // Datum in die Validierungs-Struktur einspeichern
+   toValid.Month = atoi(pMonth);
+   toValid.Year = atoi(pYear);
+
+   if (isDateValid(toValid))                          // Wenn das eingegebene Datum korrekt ist,
+   {                                                  // Validierungs-Struktur in Datumstruktur kopieren
+      date->Day = toValid.Day;                        // und die Funktion mit 1 beenden
+      date->Month = toValid.Month;
+      date->Year = toValid.Year;
+      return 1;
+   }
+   else
+      return 0;                                       // Ansonsten die Funktion mit 0 beenden
 }
 
 
 /********************************************************************
- * function:      getDate
- * description:  - user enter a date
- *                - Eingabe wird mit Hilfe der function getDateFromString geparst
+ * Funktion:      getDate
+ * Beschreibung:  - Benutzer soll ein Datum eingeben.
+ *                - Eingabe wird mit Hilfe der Funktion getDateFromString geparst
  *                und geprueft. Bei gueltigem Datum steht dieses in der Datums-
  *                variable Date.
- *                - return der Eingabe wird entsprechend angezeigt.
- *                - wird nur die Eingabetaste gedrueckt, wird die function ohne
+ *                - Ergebnis der Eingabe wird entsprechend angezeigt.
+ *                - wird nur die Eingabetaste gedrueckt, wird die Funktion ohne
  *                weitere Bildschirmausgabe beendet.
  * Paramater:     keine
- * return:      -/-
+ * Ergebnis:      -/-
  *******************************************************************/
 void getDate(char *Prompt, TDate **Datum)
 {
-    TDate Date;
-    char Input[20];
-    int chek = 0;
+   TDate Date;
+   char Input[20];
+   int ok = 0;
 
-    do
-    {
-        printf("%s", Prompt);
-        *Input = '\0';
-        scanf("%19[^\n]", Input);
-        clearBuffer();
-        if (*Input)
-            if (getDateFromString(Input, &Date))
+   do
+   {
+      printf("%s", Prompt);
+      *Input = '\0';
+      scanf("%19[^\n]", Input);
+      clearBuffer();
+      if (*Input)
+         if (getDateFromString(Input, &Date))
+         {
+            *Datum = calloc(1, sizeof(TDate));
+            if(*Datum)
             {
-                *Datum = calloc(1, sizeof(TDate));
-                if (*Datum)
-                {
-                    (*Datum)->Day = Date.Day;
-                    (*Datum)->Month = Date.Month;
-                    (*Datum)->Year = Date.Year;
-                }
-                chek = 1;
-            } else
-                printf("Das eingegebene Datum %s ist ungueltig!\n", Input);
-        else
-            break;
-    } while (!chek);
+               (*Datum)->Day = Date.Day;
+               (*Datum)->Month = Date.Month;
+               (*Datum)->Year = Date.Year;
+            }
+            ok = 1;
+         }
+         else
+            printf("Das eingegebene Datum %s ist ungueltig!\n", Input);
+      else
+         break;
+   } while (!ok);
 }
 
 /********************************************************************
- * function:      printDate
- * description:
- * Paramater:     pointer to date with typ TDate
- * return:      -/-
+ * Funktion:      printDate
+ * Beschreibung:  Gibt das Datum auf dem Bildschirm aus
+ * Paramater:     Zeiger auf Datum mit Typ TDate
+ * Ergebnis:      -/-
  *******************************************************************/
 void printDate(TDate *Date)
 {
-    if (Date != NULL)
-        printf("; * %02i.%02i.%04i", Date->Day, Date->Month, Date->Year);
+   if (Date != NULL)
+      printf("; * %02i.%02i.%04i", Date->Day, Date->Month, Date->Year);
 }
