@@ -1,0 +1,18 @@
+<Daten>
+ <Team>
+  <Player>
+   <Name>Christian Fruechtl</Name>
+   <Birthday>28.01.2000</Birthday>
+   <TricotNr>36</TricotNr>
+   <Goals>0</Goals>
+  </Player>
+  <Name>1. FC Bayern Muenchen</Name>
+  <Player>
+   <Name>Manuel Neuer</Name>
+   <Birthday>27.03.1986</Birthday>
+   <TricotNr>1</TricotNr>
+   <Goals>0</Goals>
+  </Player>
+  <Trainer>Jupp Heynckes</Trainer>
+ </Team>
+</Daten>
