@@ -19,19 +19,12 @@
 #include "database.h"
 #include "datetime.h"
 #include "tools.h"
-#include "list.h"
 
 void loadTeam(char *, FILE *);
 void loadPlayer(char *, FILE *, TTeam *);
 void saveTeam(TTeam *, FILE *);
 void savePlayer(TPlayer *, FILE *);
 
-/********************************************************************
- * Funktion:      load
- * Beschreibung:  Eine .XML Datei wird eingelesen werden
- * Paramater:     Datei zum Laden
- * Ergebnis:      -/-
- *******************************************************************/
 int load(char *Datei)
 {
    FILE *fp;      // fp = filePointer
@@ -69,25 +62,17 @@ int load(char *Datei)
    return 0;
 }
 
-/********************************************************************
- * Funktion:      loadTeam
- * Beschreibung:  Laedt die Teams aus der Datei
- * Paramater:     *tmp -
- *                *fp - FilePointer
- * Ergebnis:      -/-
- *******************************************************************/
 void loadTeam(char *tmp, FILE *fp)
 {
    char *Zeile;
    int len = 0;
-   TTeam *Team = calloc(1, sizeof(TTeam));
+   TTeam *Team = Teams + TeamCounter;
 
-   if(Team)
+   if(TeamCounter < MAXTEAMS)
    {
       Team->Name = NULL;
       Team->Coach = NULL;
       Team->Size = 0;
-
       do
       {
          Zeile = tmp;
@@ -119,19 +104,10 @@ void loadTeam(char *tmp, FILE *fp)
                strncpy(Team->Coach, Zeile + 9, len);
          }
       } while(strncmp(Zeile, "</Team>", 7) !=  0);
-      insertInDVList(Team);
       TeamCounter++;
    }
 }
 
-/********************************************************************
- * Funktion:      loadPlayer
- * Beschreibung:  Laedt die Spieler aus der Datei
- * Paramater:     *tmp -
- *                *fp - FilePointer
- *                *Team - Das Team, wo die Spieler ausgelesen werden soll
- * Ergebnis:      -/-
- *******************************************************************/
 void loadPlayer(char *tmp, FILE *fp, TTeam *Team)
 {
    char *Zeile;
@@ -197,16 +173,10 @@ void loadPlayer(char *tmp, FILE *fp, TTeam *Team)
       fgets(tmp, 100, fp);
 }
 
-/********************************************************************
- * Funktion:      save
- * Beschreibung:  Speichert Inhalte in eine Datei
- * Paramater:     -/-
- * Ergebnis:      0 - nicht erfolgreich gespeichert
- *                1 - erfolgreich gespeichert
- *******************************************************************/
-int save()
+int save(TTeam *D)
 {
    FILE *wp;
+   int i;
 
    if(askYesOrNo("Moechten Sie Ihre Eingaben speichern (j/n) ? ") == 1)
    {
@@ -224,13 +194,10 @@ int save()
          if(TeamCounter != 0)
          {
             fprintf(wp, "<Daten>\n");
-            TTeam *tmp = FirstTeam;
-            while(tmp)
-            {
-               saveTeam(tmp, wp);
-               tmp = tmp->Next;
-            }
+            for(i = 0; i < TeamCounter; i++)
+               saveTeam((Teams+i), wp);
             fprintf(wp, "</Daten>");
+
             fclose(wp);
          }
          fclose(wp);
@@ -239,13 +206,6 @@ int save()
    return 1;
 }
 
-/********************************************************************
- * Funktion:      saveTeam
- * Beschreibung:  Speichert das Team in die Datei
- * Paramater:     *D - ??
- *                *wp - ??
- * Ergebnis:      -/-
- *******************************************************************/
 void saveTeam(TTeam *D, FILE *wp)
 {
    int i;
@@ -258,16 +218,10 @@ void saveTeam(TTeam *D, FILE *wp)
    {
       savePlayer(D->Player + i, wp);
    }
+
    fprintf(wp," </Team>\n");
 }
 
-/********************************************************************
- * Funktion:      savePlayer
- * Beschreibung:  Speichert die Speieler in die Datei
- * Paramater:     *P - ??
- *                *wp - ??
- * Ergebnis:      -/-
- *******************************************************************/
 void savePlayer(TPlayer *P, FILE *wp)
 {
    fprintf(wp, "  <Player>\n");

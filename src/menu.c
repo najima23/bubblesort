@@ -10,8 +10,6 @@
 #include <stdio.h>
 #include <string.h>
 #include "tools.h"
-#include "menu.h"
-#include "teams.h"
 
 /********************************************************************
  * Funktion:      getMenu
@@ -45,28 +43,4 @@ int getMenu(char *titel, char **menuItem, int numberOfItems)
    } while (input < 1 || input > numberOfItems);         // Solange keine gueltige Eingabe getaetigt
 
    return input;
-}
-
-/********************************************************************
- * Funktion:      menuDVSortList
- * Beschreibung:  Gibt das Menu für Sortieren aus
- * Paramater:     -/-
- * Ergebnis:      Zahl der Menuauswahl
- *******************************************************************/
-int menuDVSortList()
-{
-   int input;
-   char *menuTitle =       "Ausgabe";
-   char *menuItems[] = {   "Aufwaerts ausgeben",
-                           "Abwaerts ausgeben",
-                           "zurueck zum Hauptmenu"};
-
-   input = getMenu(menuTitle, menuItems, 3);  // Menuauswahl
-   switch(input)
-   {
-      case 1: return 1;    break;
-      case 2: return 2;    break;
-      case 3: return 0;    break;
-   }
-   return 0;
 }

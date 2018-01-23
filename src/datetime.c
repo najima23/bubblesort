@@ -173,7 +173,7 @@ void getDate(char *Prompt, TDate **Datum)
 
 /********************************************************************
  * Funktion:      printDate
- * Beschreibung:  Gibt das Datum auf dem Bildschirm aus
+ * Beschreibung:
  * Paramater:     Zeiger auf Datum mit Typ TDate
  * Ergebnis:      -/-
  *******************************************************************/
