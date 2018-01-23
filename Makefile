@@ -177,6 +177,33 @@ src/datetime.c.s:
 	$(MAKE) -f CMakeFiles/ueb05Naji.dir/build.make CMakeFiles/ueb05Naji.dir/src/datetime.c.s
 .PHONY : src/datetime.c.s
 
+src/list.o: src/list.c.o
+
+.PHONY : src/list.o
+
+# target to build an object file
+src/list.c.o:
+	$(MAKE) -f CMakeFiles/ueb05Naji.dir/build.make CMakeFiles/ueb05Naji.dir/src/list.c.o
+.PHONY : src/list.c.o
+
+src/list.i: src/list.c.i
+
+.PHONY : src/list.i
+
+# target to preprocess a source file
+src/list.c.i:
+	$(MAKE) -f CMakeFiles/ueb05Naji.dir/build.make CMakeFiles/ueb05Naji.dir/src/list.c.i
+.PHONY : src/list.c.i
+
+src/list.s: src/list.c.s
+
+.PHONY : src/list.s
+
+# target to generate assembly for a file
+src/list.c.s:
+	$(MAKE) -f CMakeFiles/ueb05Naji.dir/build.make CMakeFiles/ueb05Naji.dir/src/list.c.s
+.PHONY : src/list.c.s
+
 src/main.o: src/main.c.o
 
 .PHONY : src/main.o
@@ -327,6 +354,9 @@ help:
 	@echo "... src/datetime.o"
 	@echo "... src/datetime.i"
 	@echo "... src/datetime.s"
+	@echo "... src/list.o"
+	@echo "... src/list.i"
+	@echo "... src/list.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

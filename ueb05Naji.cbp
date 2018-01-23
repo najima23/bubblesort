@@ -95,6 +95,9 @@
 		<Unit filename="/Users/najimajaadari/Desktop/ueb05Naji/header/datetime.h">
 			<Option target="ueb05Naji"/>
 		</Unit>
+		<Unit filename="/Users/najimajaadari/Desktop/ueb05Naji/header/list.h">
+			<Option target="ueb05Naji"/>
+		</Unit>
 		<Unit filename="/Users/najimajaadari/Desktop/ueb05Naji/header/menu.h">
 			<Option target="ueb05Naji"/>
 		</Unit>
@@ -111,6 +114,9 @@
 			<Option target="ueb05Naji"/>
 		</Unit>
 		<Unit filename="/Users/najimajaadari/Desktop/ueb05Naji/src/datetime.c">
+			<Option target="ueb05Naji"/>
+		</Unit>
+		<Unit filename="/Users/najimajaadari/Desktop/ueb05Naji/src/list.c">
 			<Option target="ueb05Naji"/>
 		</Unit>
 		<Unit filename="/Users/najimajaadari/Desktop/ueb05Naji/src/little_teams.xml">

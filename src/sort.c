@@ -173,3 +173,22 @@ int cmpGoals(TPlayer *D1, TPlayer *D2)
 }
 
 
+/********************************************************************
+ * Funktion:      toUpper
+ * Beschreibung:  kleine Buchstaben zu große Buchstaben
+ * Paramater:     -/-
+ * Ergebnis:      -/-
+ *******************************************************************/
+/*char toUpper(char c)
+{
+   if((c >= 'a') && (c <= 'z'))
+      return c -32;
+   if(c == 228)
+      return c -32;
+   if(c == 235)
+      return c -32;
+   if(c == 252)
+      return c -32;
+   return c;
+}
+*/

@@ -9,8 +9,6 @@
 #include "menu.h"
 #include "datastructure.h"
 #include "database.h"
-#include <unistd.h>
-#include <stdio.h>
 
 int main()
 {

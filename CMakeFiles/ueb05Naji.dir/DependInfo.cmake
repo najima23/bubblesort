@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/najimajaadari/Desktop/ueb05Naji/src/database.c" "/Users/najimajaadari/Desktop/ueb05Naji/CMakeFiles/ueb05Naji.dir/src/database.c.o"
   "/Users/najimajaadari/Desktop/ueb05Naji/src/datetime.c" "/Users/najimajaadari/Desktop/ueb05Naji/CMakeFiles/ueb05Naji.dir/src/datetime.c.o"
+  "/Users/najimajaadari/Desktop/ueb05Naji/src/list.c" "/Users/najimajaadari/Desktop/ueb05Naji/CMakeFiles/ueb05Naji.dir/src/list.c.o"
   "/Users/najimajaadari/Desktop/ueb05Naji/src/main.c" "/Users/najimajaadari/Desktop/ueb05Naji/CMakeFiles/ueb05Naji.dir/src/main.c.o"
   "/Users/najimajaadari/Desktop/ueb05Naji/src/menu.c" "/Users/najimajaadari/Desktop/ueb05Naji/CMakeFiles/ueb05Naji.dir/src/menu.c.o"
   "/Users/najimajaadari/Desktop/ueb05Naji/src/sort.c" "/Users/najimajaadari/Desktop/ueb05Naji/CMakeFiles/ueb05Naji.dir/src/sort.c.o"
