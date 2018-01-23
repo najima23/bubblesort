@@ -3,13 +3,13 @@
 *** MODUL:           sort.c
 *** description:    file for sort
 *** global FKT:     quickSort
-***                  cmpName
-***                  cmpBirthday
-***                  cmpTrikot
-***                  cmpGoals
+***                 cmpName
+***                 cmpBirthday
+***                 cmpTrikot
+***                 cmpGoals
 *** local FKT:      swap
-***                  partition
-***                  qsort
+***                 partition
+***                 qsort
 *****************************************************************************************************
 ****************************************************************************************************/
 
@@ -22,13 +22,13 @@
 
 /**********************************************************
  * function:      splitarray
- * description:  devide array in two parts each with differents size
- * Parameter:     Array - array for sort
+ * description:   devide array in two parts each with differents size
+ * parameter:     Array - array for sort
  *                lowerPart  - sort lower part of array
  *                higherPart    - sort higher part of array
- * Rueckgabe:     int   - index of middle value
+ * return:     int   - index of middle value
  **********************************************************/
-int splitarray(TPlayer *Array, int lowerPart, int higherPart, int (*cmp)(TPlayer *, TPlayer *))
+int splitarray(TPlayer *Array, int lowerPart, int higherPart, int (*cmp)(TPlayer *, TPlayer *)  )
 {
     int i = lowerPart + 1, j = higherPart;
     TPlayer *comp = (Array + lowerPart);
@@ -60,7 +60,7 @@ int splitarray(TPlayer *Array, int lowerPart, int higherPart, int (*cmp)(TPlayer
  * Parameter:     Array - array for sort
  *                lowerPart  - sort lower part of array
  *                higherPart    - sort higher part of array
- * Rueckgabe:     -/-
+ * return:     -/-
  **********************************************************/
 void qsort(TPlayer *Array, int lowerpart, int higherPart, int (*cmp)(TPlayer *, TPlayer *))
 {
@@ -81,7 +81,7 @@ void qsort(TPlayer *Array, int lowerpart, int higherPart, int (*cmp)(TPlayer *, 
  * description:  Sorts the specified number array in ascending order.
  * Parameter:     *Array  – pointer of sort array
  *                count - count element of array
- * Rueckgabe:     -/-
+ * return:     -/-
  ***********************************************************/
 void QuickSort(TPlayer *Array, int count, int (*cmp)(TPlayer *, TPlayer *))
 {

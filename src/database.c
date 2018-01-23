@@ -10,7 +10,7 @@
 ***                  savePlayer
 *****************************************************************************************************
 ****************************************************************************************************/
-#define PATH  "/Users/najimajaadari/Desktop/ueb05Naji/src/xml/team.xml"     // Pfad zum Speichern
+#define PATH  "/Users/najimajaadari/Desktop/ueb05Naji/src/xml/teams.xml"     // Pfad zum Speichern
 
 #include <stdio.h>
 #include <stdlib.h>

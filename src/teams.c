@@ -1,8 +1,8 @@
 /****************************************************************************************************
 *****************************************************************************************************
 *** MODUL:           teams.c
-*** description     managing teams
-*** global FKT:     createTeam
+*** description      managing teams
+*** global FKT:      createTeam
 ***                  deleteTeam
 ***                  addPlayer
 ***                  deletePlayer
@@ -10,13 +10,13 @@
 ***                  sortTeams
 ***                  listTeams
 ***                  loadFileMenu
-*** LOKALE FKT:      createPlayer
+*** local FKT:      createPlayer
 ***                  listOnePlayer
 ***                  listOneTeam
 ****************************************************************************************************
 ***************************************************************************************************/
 
-#define TEAMSPATH  "../src/xml/teams.xml"
+#define TEAMSPATH  "./src/xml/teams.xml"
 #define NEWTEAMS  "./src/xml/new_teams.xml"
 #define SAVETEAMS  "./src/xml/save_teams.xml"
 
@@ -33,9 +33,9 @@ int TeamCounter = 0;
 TTeam Teams[MAXTEAMS];
 
 /********************************************************************
- * function:      createPlayer
+ * function:     createPlayer
  * description:  enter player
- * Paramater:     -/-
+ * paramater:    -/-
  * return:      -/-
  *******************************************************************/
 void createPlayer(TPlayer *Player)
@@ -49,7 +49,7 @@ void createPlayer(TPlayer *Player)
 /********************************************************************
  * function:      createTeam
  * description:  create a team
- * Paramater:     -/-
+ * paramater:     -/-
  * return:      -/-
  *******************************************************************/
 void createTeam()

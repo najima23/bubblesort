@@ -14,9 +14,7 @@
 
 int main()
 {
-    char cwd[1024];
-    getcwd(cwd, sizeof(cwd));
-    printf("cwd ist %s", cwd);
+
 
     int input, checkSave = 0;
     char *menuTitel = "Mannschaften-Verwaltung V0.4";

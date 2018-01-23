@@ -1,14 +1,14 @@
 /****************************************************************************************************
 *****************************************************************************************************
-*** MODUL:           tools.c
-*** description:    Stellt einige n�tzliche functionen zur Verf�gung
-*** global FKT:     clearBuffer
+*** modul:           tools.c
+*** description:     functios for tools
+*** global FKT:      clearBuffer
 ***                  clearScreen
 ***                  printLine
 ***                  WaitForEnter
 ***                  AskYesOrNo
 ***                  getNumber
-*** LOKALE FKT:      -/-
+*** local FKT:      -/-
 *****************************************************************************************************
 ****************************************************************************************************/
 
@@ -139,11 +139,10 @@ short getText(char *Prompt, int MaxLen, int AllowEmpty, char **Text)
     if (Text == NULL)
         return 0;
     *Text = NULL;
-    Input = calloc(MaxLen + 1,
-                   sizeof(char));                    // Speicher reservieren // im ersten Zeichen wird ein \0 gespeichert
+    Input = calloc(MaxLen + 1, sizeof(char));                    // Speicher reservieren // im ersten Zeichen wird ein \0 gespeichert
     if (Input)                                                  // Pr�fen, ob Speicher reserviert worden istt
     {
-        sprintf(Format, "%%%i[^\n]", MaxLen);                   // Kapitel 5
+          (Format, "%%%i[^\n]", MaxLen);                   // Kapitel 5
         do
         {
             printf("%s", Prompt);

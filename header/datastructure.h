@@ -11,7 +11,7 @@
       int Year;
    } TDate;
 
-   typedef struct       // Struktur, um Spielerdaten abzuspeichern
+   typedef struct
    {
       char  *Name;
       TDate *Birthday;
@@ -19,7 +19,7 @@
       int   Goals;
    } TPlayer;
 
-   typedef struct       // Struktur, um Teamdaten abzuspeichern
+   typedef struct
    {
       char     *Name;
       char     *Coach;
@@ -28,7 +28,7 @@
    } TTeam;
 
 
-    extern int TeamCounter;         // Definition in teams.c
+    extern int TeamCounter;
     extern TTeam Teams[];
 
 #endif

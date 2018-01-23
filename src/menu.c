@@ -3,7 +3,7 @@
 *** MODUL:           menu.c
 *** description:    print menu & get menu
 *** global FKT:     getMenu
-*** LOKALE FKT:      -/-
+*** local FKT:      -/-
 *****************************************************************************************************
 ****************************************************************************************************/
 
@@ -14,7 +14,7 @@
 /********************************************************************
  * function:      getMenu
  * description:  print title und submenus
- * Paramater:     titel
+ * paramater:     titel
  *                menuItem
  *                number auf submenu
  * return:      int chosen menu

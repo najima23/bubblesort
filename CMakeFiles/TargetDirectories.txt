@@ -1,3 +1,3 @@
-/home/hicham/Documents/bubblesort/CMakeFiles/rebuild_cache.dir
-/home/hicham/Documents/bubblesort/CMakeFiles/ueb05Naji.dir
-/home/hicham/Documents/bubblesort/CMakeFiles/edit_cache.dir
+/Users/najimajaadari/Desktop/ueb05Naji/CMakeFiles/rebuild_cache.dir
+/Users/najimajaadari/Desktop/ueb05Naji/CMakeFiles/edit_cache.dir
+/Users/najimajaadari/Desktop/ueb05Naji/CMakeFiles/ueb05Naji.dir
