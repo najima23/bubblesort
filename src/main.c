@@ -55,7 +55,7 @@ int main()
                 loadFileMenu();
                 break;
             case 9:
-                checkSave = save(Teams);
+                checkSave = save(tmp);
                 break;
         }
         if (checkSave == 1)

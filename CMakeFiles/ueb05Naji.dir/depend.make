@@ -24,6 +24,8 @@ CMakeFiles/ueb05Naji.dir/src/main.c.o: header/menu.h
 CMakeFiles/ueb05Naji.dir/src/main.c.o: header/teams.h
 
 CMakeFiles/ueb05Naji.dir/src/menu.c.o: src/menu.c
+CMakeFiles/ueb05Naji.dir/src/menu.c.o: header/menu.h
+CMakeFiles/ueb05Naji.dir/src/menu.c.o: header/teams.h
 CMakeFiles/ueb05Naji.dir/src/menu.c.o: header/tools.h
 
 CMakeFiles/ueb05Naji.dir/src/sort.c.o: src/sort.c

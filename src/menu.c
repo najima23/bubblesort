@@ -10,6 +10,9 @@
 #include <stdio.h>
 #include <string.h>
 #include "tools.h"
+#include "menu.h"
+#include "teams.h"
+
 
 /********************************************************************
  * function:      getMenu

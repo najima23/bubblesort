@@ -65,6 +65,10 @@ string.h
 -
 tools.h
 /Users/najimajaadari/Desktop/ueb05Naji/src/tools.h
+menu.h
+/Users/najimajaadari/Desktop/ueb05Naji/src/menu.h
+teams.h
+/Users/najimajaadari/Desktop/ueb05Naji/src/teams.h
 
 /Users/najimajaadari/Desktop/ueb05Naji/src/sort.c
 stdio.h

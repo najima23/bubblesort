@@ -26,46 +26,46 @@ int compare(TTeam *, TTeam *);
  ***********************************************************/
 int insertInDVList(TTeam *Neu)
 {
-   TTeam *akt = FirstTeam;
+    TTeam *akt = FirstTeam;
 
-   if(!Neu)
-      return 0;
+    if(!Neu)
+        return 0;
 
-   if(FirstTeam == NULL)
-   {
-      FirstTeam = LastTeam = Neu;
-      return 1;
-   }
+    if(FirstTeam == NULL)
+    {
+        FirstTeam = LastTeam = Neu;
+        return 1;
+    }
 
-   if(compare(FirstTeam, Neu) >=0)
-   {
-      Neu->Next = FirstTeam;
-      Neu->Prev = NULL;
-      FirstTeam = FirstTeam->Prev = Neu;
-      return 1;
-   }
+    if(compare(FirstTeam, Neu) >=0)
+    {
+        Neu->Next = FirstTeam;
+        Neu->Prev = NULL;
+        FirstTeam = FirstTeam->Prev = Neu;
+        return 1;
+    }
 
-   if(compare(LastTeam, Neu) <= 0)
-   {
-      Neu->Next = NULL;
-      Neu->Prev = LastTeam;
-      LastTeam = LastTeam->Next = Neu;
-      return 1;
-   }
+    if(compare(LastTeam, Neu) <= 0)
+    {
+        Neu->Next = NULL;
+        Neu->Prev = LastTeam;
+        LastTeam = LastTeam->Next = Neu;
+        return 1;
+    }
 
-   while(akt->Next != NULL)
-   {
-      if(compare(akt->Next, Neu) >= 0)
-      {
-         Neu->Next = akt->Next;          // (1.1)
-         Neu->Prev = akt;                // (1.2)
-         akt->Next->Prev = Neu;          // (1.3)
-         akt->Next = Neu;                // (1.4)
-         return 1;
-      }
-      akt = akt->Next;
-   }
-   return 0;
+    while(akt->Next != NULL)
+    {
+        if(compare(akt->Next, Neu) >= 0)
+        {
+            Neu->Next = akt->Next;          // (1.1)
+            Neu->Prev = akt;                // (1.2)
+            akt->Next->Prev = Neu;          // (1.3)
+            akt->Next = Neu;                // (1.4)
+            return 1;
+        }
+        akt = akt->Next;
+    }
+    return 0;
 }
 
 /***********************************************************
@@ -77,43 +77,43 @@ int insertInDVList(TTeam *Neu)
  ***********************************************************/
 TTeam *removeFromDVList(TTeam *Del)
 {
-   TTeam *akt = FirstTeam, *tmp = NULL;
-   if(!Del)
-      return NULL;
-   if(FirstTeam == NULL)
-      return NULL;
-   if(compare(FirstTeam, Del) == 0)
-   {
-      if(FirstTeam->Next == NULL)
-      {
-         tmp = FirstTeam;
-         FirstTeam = LastTeam = NULL;
-         return tmp;
-      }
-      FirstTeam->Next->Prev = NULL;           // (2.1)
-      tmp = FirstTeam;                        // (2.2)
-      FirstTeam = FirstTeam->Next;            // (2.3)
-      return tmp;
-   }
-   if(compare(LastTeam, Del) == 0)
-   {
-      LastTeam->Prev->Next = NULL;            // (3.)
-      tmp = LastTeam;
-      LastTeam = LastTeam->Prev;
-      return tmp;
-   }
-   while(akt->Next != NULL)
-   {
-      if(compare(akt->Next, Del) == 0)
-      {
-         tmp = akt->Next;                // (4.1)
-         tmp->Next->Prev = akt;          // (4.2)
-         akt->Next = tmp->Next;          // (4.3)
-         return tmp;
-      }
-      akt = akt->Next;
-   }
-   return NULL;
+    TTeam *akt = FirstTeam, *tmp = NULL;
+    if(!Del)
+        return NULL;
+    if(FirstTeam == NULL)
+        return NULL;
+    if(compare(FirstTeam, Del) == 0)
+    {
+        if(FirstTeam->Next == NULL)
+        {
+            tmp = FirstTeam;
+            FirstTeam = LastTeam = NULL;
+            return tmp;
+        }
+        FirstTeam->Next->Prev = NULL;           // (2.1)
+        tmp = FirstTeam;                        // (2.2)
+        FirstTeam = FirstTeam->Next;            // (2.3)
+        return tmp;
+    }
+    if(compare(LastTeam, Del) == 0)
+    {
+        LastTeam->Prev->Next = NULL;            // (3.)
+        tmp = LastTeam;
+        LastTeam = LastTeam->Prev;
+        return tmp;
+    }
+    while(akt->Next != NULL)
+    {
+        if(compare(akt->Next, Del) == 0)
+        {
+            tmp = akt->Next;                // (4.1)
+            tmp->Next->Prev = akt;          // (4.2)
+            akt->Next = tmp->Next;          // (4.3)
+            return tmp;
+        }
+        akt = akt->Next;
+    }
+    return NULL;
 }
 /***********************************************************
  * Funktion:      compare
