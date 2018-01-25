@@ -1,11 +1,11 @@
 /****************************************************************************************************
 *****************************************************************************************************
-*** MODUL:           datetime.c
-*** description:    Stellt functionen f�r die Eingabe von Datum und Uhrzeit zur Verf�gung
+*** modul:           datetime.c
+*** description:    functions for date and time
 *** global FKT:     getDateFromString
 ***                  getDate
 ***                  printDate
-*** LOKALE FKT:      isLeapYear
+*** local FKT:      isLeapYear
 ***                  isDateValid
 *****************************************************************************************************
 ****************************************************************************************************/

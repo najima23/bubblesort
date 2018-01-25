@@ -17,7 +17,7 @@ int main()
 
 
     int input, checkSave = 0;
-    char *menuTitel = "Mannschaften-Verwaltung V0.4";
+    char *menuTitel = "Mannschaften-Verwaltung V0.5";
     char *menuItems[] = {"Neue Mannschaften anlegen",
                          "Spieler hinzufuegen",
                          "Spieler loeschen",

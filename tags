@@ -167,7 +167,7 @@ main	cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^i
 main	cmake-build-debug/CMakeFiles/feature_tests.c	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f	typeref:typename:int
 main	cmake-build-debug/CMakeFiles/feature_tests.cxx	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f	typeref:typename:int
 main	src/main.c	/^int main()$/;"	f	typeref:typename:int
-partition	src/sort.c	/^int splitarray(TPlayer *Array, int ui, int oi, int (*cmp)(TPlayer *, TPlayer *))$/;"	f	typeref:typename:int
+partition	src/sort.c	/^int partition(TPlayer *Array, int ui, int oi, int (*cmp)(TPlayer *, TPlayer *))$/;"	f	typeref:typename:int
 preinstall	cmake-build-debug/Makefile	/^preinstall: all$/;"	t
 preinstall/fast	cmake-build-debug/Makefile	/^preinstall\/fast:$/;"	t
 printDate	src/datetime.c	/^void printDate(TDate *Date)$/;"	f	typeref:typename:void

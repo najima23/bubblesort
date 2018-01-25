@@ -21,14 +21,14 @@
 
 
 /**********************************************************
- * function:      splitarray
+ * function:      partition
  * description:   devide array in two parts each with differents size
  * parameter:     Array - array for sort
  *                lowerPart  - sort lower part of array
  *                higherPart    - sort higher part of array
  * return:     int   - index of middle value
  **********************************************************/
-int splitarray(TPlayer *Array, int lowerPart, int higherPart, int (*cmp)(TPlayer *, TPlayer *)  )
+int partition(TPlayer *Array, int lowerPart, int higherPart, int (*cmp)(TPlayer *, TPlayer *))
 {
     int i = lowerPart + 1, j = higherPart;
     TPlayer *comp = (Array + lowerPart);
@@ -70,7 +70,7 @@ void qsort(TPlayer *Array, int lowerpart, int higherPart, int (*cmp)(TPlayer *, 
         return;
     else
     {
-        middleValue = splitarray(Array, lowerpart, higherPart, cmp);
+        middleValue = partition(Array, lowerpart, higherPart, cmp);
         qsort(Array, lowerpart, middleValue - 1, cmp); // sort left part recursively
         qsort(Array, middleValue + 1, higherPart, cmp); // sort right part recursively
     }
@@ -85,7 +85,7 @@ void qsort(TPlayer *Array, int lowerpart, int higherPart, int (*cmp)(TPlayer *, 
  ***********************************************************/
 void QuickSort(TPlayer *Array, int count, int (*cmp)(TPlayer *, TPlayer *))
 {
-    printf("count: %i\n", count);
+    //printf("count: %i\n", count);
     qsort(Array, 0, count - 1, cmp);
 }
 

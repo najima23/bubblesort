@@ -10,7 +10,7 @@
 ***                  savePlayer
 *****************************************************************************************************
 ****************************************************************************************************/
-#define PATH  "/Users/najimajaadari/Desktop/ueb05Naji/src/xml/teams.xml"     // Pfad zum Speichern
+#define PATH  "./src/xml/save_teams.xml"     // Pfad zum Speichern
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -27,7 +27,7 @@ void savePlayer(TPlayer *, FILE *);
 
 int load(char *Datei)
 {
-   FILE *fp;      // fp = filePointer
+   FILE *fp;
    char tmp[101];
    char *row;
 
@@ -61,6 +61,14 @@ int load(char *Datei)
    waitForEnter();
    return 0;
 }
+
+/********************************************************************
+ * Funktion:      loadTeam
+ * Beschreibung:  load teams from data
+ * Paramater:     *tmp -
+ *                *fp - FilePointer
+ * Ergebnis:      -/-
+ *******************************************************************/
 
 void loadTeam(char *tmp, FILE *fp)
 {
@@ -107,6 +115,15 @@ void loadTeam(char *tmp, FILE *fp)
       TeamCounter++;
    }
 }
+
+/********************************************************************
+ * Funktion:      loadPlayer
+ * Beschreibung:  load players from data
+ * Paramater:     *tmp -
+ *                *fp - FilePointer
+ *                *Team - the team
+ * Ergebnis:      -/-
+ *******************************************************************/
 
 void loadPlayer(char *tmp, FILE *fp, TTeam *Team)
 {
@@ -173,6 +190,13 @@ void loadPlayer(char *tmp, FILE *fp, TTeam *Team)
       fgets(tmp, 100, fp);
 }
 
+/********************************************************************
+ * Funktion:      save
+ * Beschreibung:  save data in file
+ * Paramater:     -/-
+ * Ergebnis:      0 - not successful
+ *                1 - successful
+ *******************************************************************/
 int save(TTeam *D)
 {
    FILE *wp;
@@ -206,6 +230,13 @@ int save(TTeam *D)
    return 1;
 }
 
+/********************************************************************
+ * Funktion:      saveTeam
+ * Beschreibung:  save the teams in file
+ * Paramater:     *D
+ *                *wp
+ * Ergebnis:      -/-
+ *******************************************************************/
 void saveTeam(TTeam *D, FILE *wp)
 {
    int i;
@@ -222,6 +253,13 @@ void saveTeam(TTeam *D, FILE *wp)
    fprintf(wp," </Team>\n");
 }
 
+/********************************************************************
+ * Funktion:      savePlayer
+ * Beschreibung:  save the players in file
+ * Paramater:     *P
+ *                *wp
+ * Ergebnis:      -/-
+ *******************************************************************/
 void savePlayer(TPlayer *P, FILE *wp)
 {
    fprintf(wp, "  <Player>\n");
