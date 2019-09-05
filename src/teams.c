@@ -22,7 +22,9 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "datastructure.h"
+#include "list.h"
 #include "datetime.h"
 #include "tools.h"
 #include "database.h"
@@ -30,7 +32,9 @@
 #include "sort.h"
 
 int TeamCounter = 0;
-TTeam Teams[MAXTEAMS];
+
+TTeam *FirstTeam = NULL;
+TTeam *LastTeam = NULL;
 
 /********************************************************************
  * function:     createPlayer
@@ -54,16 +58,15 @@ void createPlayer(TPlayer *Player)
  *******************************************************************/
 void createTeam()
 {
-    TTeam *Team = Teams +
-                  TeamCounter;
-    char *title = "Erfassung einer neuen Mannschaft";
-    clearScreen();
+   TTeam *Team = calloc(1, sizeof(TTeam));
+   char *title = "Erfassung einer neuen Mannschaft";
+   clearScreen();
 
-    if (TeamCounter < MAXTEAMS)
-    {
-        printf("%s\n", title);
-        printLine('=', strlen(title));
-        printf("\n\n");
+   if(Team)
+   {
+      printf("%s\n", title);
+      printLine('=', strlen(title));
+      printf("\n\n");
 
         getText("Geben Sie bitte den Namen der Mannschaften ein:\n-> ", 50, 0, &(Team->Name)); //
         getText("Geben Sie bitte den Namen des Trainers ein:\n-> ", 50, 1, &(Team->Coach));
@@ -97,8 +100,44 @@ void createTeam()
  *******************************************************************/
 void deleteTeam()
 {
-    printf("deleteTeam\n\n");
-    waitForEnter();
+   TTeam *tmp = FirstTeam;
+   int   index = 1,
+         input = 0,
+         i = 0;
+   char *title = "Lister der Mannschaften";
+
+   do
+   {
+      clearScreen();
+
+      printf("%s\n", title);
+      printLine('=', strlen(title));
+      printf("\n\n");
+
+      index = 1;
+      while(tmp)
+      {
+         printf("%02i. %s\n", index, tmp->Name);
+
+         tmp = tmp->Next;
+         index++;
+      }
+      printf("\nWelche Mannschaft moechten Sie loeschen (0 fuer Abbrechen) ?");
+      scanf("%i", &input);
+      tmp = FirstTeam;
+   } while (input > index);
+
+   if(input == 0)
+      return;
+
+   tmp = FirstTeam;
+   while(i < input-1)
+   {
+      tmp = tmp->Next;
+      i++;
+   }
+   removeFromDVList(tmp);
+   freeOneTeam(tmp);
 }
 
 /********************************************************************
@@ -145,36 +184,49 @@ void searchPlayer()
  *******************************************************************/
 int sortTeams()
 {
-    int input, i;
-    char *menuTitel = "Sortieren";
-    char *menuItems[] = {"Spieler nach Namen sortieren",
-                         "Spieler nach Geburtsdatum sortieren",
-                         "Spieler nach TrikotNr. sortieren",
-                         "Spieler nach Anzahl geschossener Tore sortieren",
-                         "zurueck zum Hauptmenu"};
-    input = getMenu(menuTitel, menuItems, 5);  // Menuauswahl
-    switch (input)
-    {
-        case 1:
-            for (i = 0; i < TeamCounter; i++)
-                QuickSort((Teams + i)->Player, (Teams + i)->Size, cmpName);
-            break;
-        case 2:
-            for (i = 0; i < TeamCounter; i++)
-                QuickSort((Teams + i)->Player, (Teams + i)->Size, cmpBirthday);
-            break;
-        case 3:
-            for (i = 0; i < TeamCounter; i++)
-                QuickSort((Teams + i)->Player, (Teams + i)->Size, cmpTrikot);
-            break;
-        case 4:
-            for (i = 0; i < TeamCounter; i++)
-                QuickSort((Teams + i)->Player, (Teams + i)->Size, cmpGoals);
-            break;
-        case 5:
-            return 0;
-    }
-    return 0;
+   int input;
+   char *menuTitel = "Sortieren";
+   char *menuItems[] = {"Spieler nach Namen sortieren",
+                        "Spieler nach Geburtsdatum sortieren",
+                        "Spieler nach TrikotNr. sortieren",
+                        "Spieler nach Anzahl geschossener Tore sortieren",
+                        "zurueck zum Hauptmenu"};
+   input = getMenu(menuTitel, menuItems, 5);  // Menuauswahl
+   TTeam *tmp = FirstTeam;
+
+   switch(input)
+   {
+      case 1:
+         while(tmp)
+         {
+            QuickSort(tmp->Player, tmp->Size, cmpName);
+            tmp = tmp->Next;
+         }
+         break;
+      case 2:
+            while(tmp)
+            {
+               QuickSort(tmp->Player, tmp->Size, cmpBirthday);
+               tmp = tmp->Next;
+            }
+         break;
+      case 3:
+         while(tmp)
+         {
+            QuickSort(tmp->Player, tmp->Size, cmpTrikot);
+            tmp = tmp->Next;
+         }
+         break;
+      case 4:
+         {
+            QuickSort(tmp->Player, tmp->Size, cmpGoals);
+            tmp = tmp->Next;
+         }
+         break;
+      case 5:
+         return 0;
+   }
+   return 0;
 }
 
 /********************************************************************
@@ -226,25 +278,46 @@ void listOneTeam(TTeam *Team)
  *******************************************************************/
 void listTeams()
 {
-    int i;
+   TTeam *tmp = FirstTeam;
+   TTeam *tmp2 = LastTeam;
+   int choice;
+   char title[] = "Liste der Mannschaften";
+   clearScreen();
 
-    clearScreen();
-    char title[] = "Liste der Mannschaften";
-    printf("%s\n", title);
-    printLine('=', strlen(title));
+   if(TeamCounter == 0)
+   {
+      printf("%s\n", title);     // Print Header für ListTeams
+      printLine('=', strlen(title));
+      printf("\n\nAktuell sind keine Mannschaften erstellt worden!\n\n");
+   }
+   else
+   {
+      choice = menuDVSortList();          // Menu zum Sortieren der Teams
+      clearScreen();
 
-    if (TeamCounter == 0)
-        printf("\n\nAktuell sind keine Mannschaften erstellt worden!\n\n");
+      printf("%s\n", title);              // Print Header für ListTeams
+      printLine('=', strlen(title));
 
-    else
-    {
-        for (i = 0; i < TeamCounter; i++)
-        {
-            listOneTeam(Teams + i);
-        }
-    }
-    printf("\n\n");
-    waitForEnter();
+      if(choice == 1)                     // Menuauswahl Abwaerts sortieren
+      {
+         while(tmp)
+         {
+            listOneTeam(tmp);             // Liste ein Team auf
+            tmp = tmp->Next;              // geh zum naechsten Team
+         }
+      }
+
+      else if(choice == 2)                     // Menuauswahl Abwaerts sortieren
+      {
+         while(tmp2)
+         {
+            listOneTeam(tmp2);            // Liste das ein Team von hinten auf
+            tmp2 = tmp2->Prev;            // geh ein Team zurueck
+         }
+      }
+   }
+   printf("\n\n");
+   waitForEnter();
 }
 
 /********************************************************************
@@ -255,34 +328,20 @@ void listTeams()
  *******************************************************************/
 int loadFileMenu()
 {
-    int input;
-    char *menuTitel = "Datei Laden";
-    char *menuItems[] = {"Datei laden (teams.xml)",
-                         "Datei laden (new_teams.xml)",
-                         "Datei laden (save_teams.xml)",
-                         "zurueck zum Hauptmenu"};
-    if (TeamCounter < MAXTEAMS)
-    {
-        input = getMenu(menuTitel, menuItems, 4);  // Menuauswahl
-        switch (input)
-        {
-            case 1:
-                load(TEAMSPATH);
-                break;
-            case 2:
-                load(NEWTEAMS);
-                break;
-            case 3:
-                load(SAVETEAMS);
-                break;
-            case 4:
-                return 0;
-        }
-    } else
-    {
-        clearScreen();
-        printf("Die maximale Anzahl an Teams(10) ist erreicht!\n\n");
-        waitForEnter();
-    }
-    return 0;
+   int input;
+   char *menuTitel = "Datei Laden";
+   char *menuItems[] = {"Datei laden (teams.xml)",
+                        "Datei laden (little_teams.xml)",
+                        "Datei laden (save_teams.xml)",
+                        "zurueck zum Hauptmenu"};
+
+   input = getMenu(menuTitel, menuItems, 4);  // Menuauswahl
+   switch(input)
+   {
+      case 1: load(TEAMSPATH);    break;
+      case 2: load(NEWTEAMS);    break;
+      case 3: load(SAVETEAMS);    break;
+      case 4: return 0;
+   }
+   return 0;
 }

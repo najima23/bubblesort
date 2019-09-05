@@ -6,12 +6,17 @@ CMakeFiles/ueb05Naji.dir/src/database.c.o
  header/database.h
  header/datastructure.h
  header/datetime.h
+ header/list.h
  header/tools.h
 CMakeFiles/ueb05Naji.dir/src/datetime.c.o
  /Users/najimajaadari/Desktop/ueb05Naji/src/datetime.c
  header/datastructure.h
  header/datetime.h
  header/tools.h
+CMakeFiles/ueb05Naji.dir/src/list.c.o
+ /Users/najimajaadari/Desktop/ueb05Naji/src/list.c
+ header/datastructure.h
+ header/list.h
 CMakeFiles/ueb05Naji.dir/src/main.c.o
  /Users/najimajaadari/Desktop/ueb05Naji/src/main.c
  header/database.h
@@ -20,6 +25,8 @@ CMakeFiles/ueb05Naji.dir/src/main.c.o
  header/teams.h
 CMakeFiles/ueb05Naji.dir/src/menu.c.o
  /Users/najimajaadari/Desktop/ueb05Naji/src/menu.c
+ header/menu.h
+ header/teams.h
  header/tools.h
 CMakeFiles/ueb05Naji.dir/src/sort.c.o
  /Users/najimajaadari/Desktop/ueb05Naji/src/sort.c
@@ -30,6 +37,7 @@ CMakeFiles/ueb05Naji.dir/src/teams.c.o
  header/database.h
  header/datastructure.h
  header/datetime.h
+ header/list.h
  header/menu.h
  header/sort.h
  header/tools.h

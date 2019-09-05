@@ -21,6 +21,8 @@ datetime.h
 /Users/najimajaadari/Desktop/ueb05Naji/src/datetime.h
 tools.h
 /Users/najimajaadari/Desktop/ueb05Naji/src/tools.h
+list.h
+/Users/najimajaadari/Desktop/ueb05Naji/src/list.h
 
 /Users/najimajaadari/Desktop/ueb05Naji/src/datetime.c
 stdio.h
@@ -34,6 +36,18 @@ datastructure.h
 datetime.h
 /Users/najimajaadari/Desktop/ueb05Naji/src/datetime.h
 
+/Users/najimajaadari/Desktop/ueb05Naji/src/list.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+datastructure.h
+/Users/najimajaadari/Desktop/ueb05Naji/src/datastructure.h
+list.h
+/Users/najimajaadari/Desktop/ueb05Naji/src/list.h
+
 /Users/najimajaadari/Desktop/ueb05Naji/src/main.c
 teams.h
 /Users/najimajaadari/Desktop/ueb05Naji/src/teams.h
@@ -43,10 +57,6 @@ datastructure.h
 /Users/najimajaadari/Desktop/ueb05Naji/src/datastructure.h
 database.h
 /Users/najimajaadari/Desktop/ueb05Naji/src/database.h
-unistd.h
--
-stdio.h
--
 
 /Users/najimajaadari/Desktop/ueb05Naji/src/menu.c
 stdio.h
@@ -55,6 +65,10 @@ string.h
 -
 tools.h
 /Users/najimajaadari/Desktop/ueb05Naji/src/tools.h
+menu.h
+/Users/najimajaadari/Desktop/ueb05Naji/src/menu.h
+teams.h
+/Users/najimajaadari/Desktop/ueb05Naji/src/teams.h
 
 /Users/najimajaadari/Desktop/ueb05Naji/src/sort.c
 stdio.h
@@ -71,8 +85,12 @@ stdio.h
 -
 string.h
 -
+stdlib.h
+-
 datastructure.h
 /Users/najimajaadari/Desktop/ueb05Naji/src/datastructure.h
+list.h
+/Users/najimajaadari/Desktop/ueb05Naji/src/list.h
 datetime.h
 /Users/najimajaadari/Desktop/ueb05Naji/src/datetime.h
 tools.h
@@ -99,6 +117,8 @@ header/database.h
 header/datastructure.h
 
 header/datetime.h
+
+header/list.h
 
 header/menu.h
 

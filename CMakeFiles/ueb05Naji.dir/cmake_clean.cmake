@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ueb05Naji.dir/src/sort.c.o"
   "CMakeFiles/ueb05Naji.dir/src/teams.c.o"
   "CMakeFiles/ueb05Naji.dir/src/tools.c.o"
+  "CMakeFiles/ueb05Naji.dir/src/list.c.o"
   "ueb05Naji.pdb"
   "ueb05Naji"
 )

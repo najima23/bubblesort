@@ -21,6 +21,6 @@ set(SOURCE_FILES
         src/sort.c
         src/teams.c
         src/xml/teams.xml
-        src/tools.c)
+        src/tools.c header/list.h src/list.c)
 
 add_executable(ueb05Naji ${SOURCE_FILES})
