@@ -1,1 +1,90 @@
-<mxfile host="app.diagrams.net" modified="2021-10-31T16:30:46.581Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36" version="15.5.2" etag="vi1uRU0Q2PmTf8FFCJx9" type="github"><diagram id="hx6i9FGdHrWzlgJRfL3x">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-31T22:25:19.008Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36" etag="XKpMtK-LBll41f_7vg7z" version="15.5.2" type="github">
+  <diagram id="hx6i9FGdHrWzlgJRfL3x" name="Page-1">
+    <mxGraphModel dx="1186" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-1" value="deep brain stimulation" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="290" y="250" width="260" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-13" value="&lt;font style=&quot;font-size: 14px&quot;&gt;test function()&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="5UbEkDr4et_JbdGB8QBt-1">
+          <mxGeometry x="39" y="120" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-18" value="&lt;font style=&quot;font-size: 14px&quot;&gt;controll()&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="5UbEkDr4et_JbdGB8QBt-1">
+          <mxGeometry x="39" y="160" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-17" value="&lt;font style=&quot;font-size: 14px&quot;&gt;follow programming ()&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="5UbEkDr4et_JbdGB8QBt-1">
+          <mxGeometry x="39" y="80" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-16" value="&lt;font style=&quot;font-size: 14px&quot;&gt;initial programming ()&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="5UbEkDr4et_JbdGB8QBt-1">
+          <mxGeometry x="39" y="40" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-43" value="" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fillColor=none;" vertex="1" parent="5UbEkDr4et_JbdGB8QBt-1">
+          <mxGeometry x="-220" y="-170" width="450" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-2" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/hospital-52/32/13-128.png" vertex="1" parent="1">
+          <mxGeometry x="810" y="436" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-3" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/covid-19/64/30-Doctor-128.png" vertex="1" parent="1">
+          <mxGeometry x="550" y="460" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-4" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/diseases-and-injury-1/340/injury_treatment_medical_health_head_patient_person_pain-128.png" vertex="1" parent="1">
+          <mxGeometry x="150" y="92" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-5" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/maternity-and-pregnancy-2/512/17_progress_report_statistics_patient_recovery-128.png" vertex="1" parent="1">
+          <mxGeometry x="20" y="400" width="93" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-8" value="Chirog" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="570" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-11" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/business-collection-2027/60/justice-128.png" vertex="1" parent="1">
+          <mxGeometry x="820" y="230" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-20" value="Therapeut" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="560" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-27" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.tablet_ipad;" vertex="1" parent="1">
+          <mxGeometry x="140" y="180" width="39" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-29" value="Therapeut" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="600" y="168" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-30" value="Patient" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="140" y="250" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="5UbEkDr4et_JbdGB8QBt-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="5UbEkDr4et_JbdGB8QBt-18" target="5UbEkDr4et_JbdGB8QBt-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-33" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/IconsLandVistaPeopleIconsDemo/128/Nurse_Male_Dark.png;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="68" y="455" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-34" value="Pfleger" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="560" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-37" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/health-care-and-first-responders/64/doctor-white-male-coronavirus-128.png;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="592" y="40" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-38" value="medizinische Standards" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="800" y="554" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-39" value="gerichtliches und Versicherung&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="775" y="380" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="5UbEkDr4et_JbdGB8QBt-13" target="5UbEkDr4et_JbdGB8QBt-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.903;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;" edge="1" parent="1" source="5UbEkDr4et_JbdGB8QBt-17" target="5UbEkDr4et_JbdGB8QBt-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5UbEkDr4et_JbdGB8QBt-42" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/health-care-and-first-responders/64/doctor-white-male-coronavirus-128.png;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="140" y="441" width="128" height="128" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
